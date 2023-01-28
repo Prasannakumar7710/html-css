@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidden -Reset-Submit-Image button</title>
+</head>
+<body>
+    <h1>Hidden fields</h1>
+     <form> 
+   <input type="hidden"  name="name" value="true"/>
+   <input type="hidden" name="name2" value="1"/>
+   <hr>
+   <h2>Reset button</h2>
+   <input type="text"/><br>
+   <input type="text"/><br>
+   <input type="password"/><br>
+   <input type="reset" value="clear all"/>
+</form>
+<hr>
+<form action="test.jsp">
+    <h2>Submit button</h2>
+   <input type="text"  id="name" name="name" /><br>
+   <input type="text"  id="name" name="name" /><br>
+   <input type="Submit"  id="sb" name="sb" /><br>
+   <button  name="sb">Submit</button>
+</form>
+</body>
+<form action="test.jsp">
+    <h2>Image button</h2>
+   <input type="text"  id="name" name="name" /><br>
+   <input type="text"  id="name" name="name" /><br>
+   <input type="text"/>
+   <input type="image"  src=""   id="sb" name="sb"/>
+</form>
+</html>

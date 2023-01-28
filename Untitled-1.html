@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var i=0;
+        var images["",""];
+        function bodyload(i);
+        {
+            document.querySelector("img").src=images[i];
+
+        }
+        function next{
+            if (i<=3)
+            {
+                i++;
+                bodyload(i);
+            }
+            else{
+                document.getElementById("next").Disabled=true;
+            }
+        }
+        function pre(
+            {
+                if(i>=1)
+                {
+                    i--;
+                    bodyload(i);
+                }
+            }
+        )
+    </script>
+</head>
+<body onload="bodyload(0)">
+    <img width="250px" height="250px" style="margin-left: 10px;">
+    <div style="margin-left: 70px;margin-top 25px;">
+        <button class="btn btn-primary" onclick="pre()"> << </button>
+        <button class="btn btn-primary" style="margin-left: 25px;" id="next" onclick="next()"> >> </button>
+    </div>
+    
+</body>
+</html>

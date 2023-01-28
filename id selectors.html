@@ -1,0 +1,134 @@
+ex33
+-------
+<!-- CSS selector
+ id sel  ==> this selector used to define styles for 1 instance of specific element
+				==> unqiue selector
+		Syn:		 #id-name{
+							   prop:val;
+							   prop:val;
+							   ...
+						  } 
+mapping:
+	we have to map id selector to element by using "id" attribute
+	Syn:			<tag  id="id-name">
+
+Note: => we can map only 1 id selector to element
+-->		
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>Ex33</title>
+    <link rel="icon" href="logo1.png"/>
+	<style>
+		#id1{
+			background:red;
+		}
+		#id2{
+			background:blue;
+	   }
+	   #test{
+			background:yellow;
+	   }
+	</style>
+ </head>
+ <body>
+		<h3>demo on id selector</h3>
+		<h1 id="id1">HTML</h1>
+		<h1 id="id2">CSS</h1>
+		<h1 id="test">JavaScript</h1>
+		<h2 id="id1 id2">BootStrap</h2>
+		<h1 id="id2">Jquery</h1>  <!-- invalid code -->
+ </body>
+</html>	
+
+ex34
+-------
+<!-- CSS selector
+ class sel  ==> this selector used to define common styles for group of instances of specific element
+		==> this selector also used to define common styles for multiple tags 
+		Syn:		 .class-name{
+							   prop:val;
+							   prop:val;
+							   ...
+						  } 
+mapping:
+	we have to map class selector to elements by using "class" attribute
+	Syn:			<tag  class="class-name">
+
+Note: => we can map no.of class selectors to element
+			 =>  1 class-sel we can map to any no.of tags
+	
+		*   <=== universal 
+		#  <=== id
+		.	<=== class
+		,	<=== group
+		[ ]  <=== attribute
+		:	  <=== pseudo class
+		::   <=== pseudo element
+		>   <=== direct child
+      space   <=== child
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>Ex34</title>
+    <link rel="icon" href="logo1.png"/>
+	<style>
+		.c1{
+			background:red;
+		}
+		.c2{
+			background:blue;
+		} 
+		.test{
+			background:cyan;
+		}
+	</style>
+ </head>
+ <body>
+		<h3>demo on class selector</h3>
+		<h1 class="c1">HTML</h1>
+		<h1 class="c1">CSS</h1>
+		<h1 class="c1">JavaScript</h1>
+		<h1 class="c2">BootStrap</h1>
+		<h1 class="c2">Jquery</h1>  
+
+		<h1 class="test">red apple</h1>
+		<h2 class="test">yellow</h2>
+		<h3 class="test">Evaluation and Purchase</h3>
+	    <p class="test">EDITPLUS IS SOLD "AS IS" AND WITHOUT ANY WARRANTY AS TO MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE OR ANY OTHER WARRANTIES EITHER EXPRESSED OR IMPLIED. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE.</p>
+		<label class="sample">enter usernae</label>
+		<span class="sample">*</span>
+ </body>
+</html>	
+
+ex35
+-------
+<!-- CSS selector -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <title>Ex35</title>
+    <link rel="icon" href="logo1.png"/>
+	<style>
+		.heading1{
+			background:red;
+		}
+		.heading2{
+			background:blue;
+		}
+		.heading3{
+			background:green;
+		}
+		.heading4{
+			color:white;
+			text-align:center;
+		}
+	</style>
+ </head>
+ <body>
+		<h3>demo on class selector</h3>
+		<h1 class="heading1  heading3  heading2">HTML</h1>
+		<h1 class="heading4 heading1">JavaScript</h1>
+   </body>
+</html>	

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+        width: 250px;
+        height: 340px;
+        margin: auto;
+        background-color: cyan;
+        border-radius: 10px solid grey;
+        padding-left: 35px;
+        
+       }
+       span{
+        font-size: 20px;
+        color: red;
+       }
+       headding{
+        text-align:center ;
+        padding-top: 20px;
+       } 
+    </style>
+</head>
+<body>
+    <h3>demo on password</h3>
+    <label>enter password</label>
+    <input type="password" id="pw" name="pw"/>
+    <br>
+    <label>enter cvv</label>
+    <input type="password" id="cv" name="cv" maxlength="3"/>
+    <br> 
+<hr>
+
+
+
+    <h3>demo on number fields</h3>
+		<input type="number" id="n1" name="n1"/> <br>
+		<input type="number" id="n2" name="n2" min="1" max="100"/> <br>
+		<input type="number" id="n3" name="n3" min="0" max="500" step="10"/>
+					for(i=0; i<=500; i+=10)
+					for(i=500; i>=0; i-=10)
+  </body>
+
+  <br>
+<hr>
+<div>
+    <h2>Student Enrolment form</h2>
+    <form action="regester.jsp" >
+<label>Full name</label><span>*</span><br>
+<input type="text" id="full name" name=" full name" required/><br>
+<label>Email I</label><span>*</span><br>
+<input type="text" id="Email" name="Email" required/><br>
+<label>Concact number</label><span>*</span><br>
+<input type="text" id="ph" name="ph" maxlength="10" required/><br>
+<label>Which course?</label><span>*</span><br>
+<input type="trxt" id="course" name="course" required/><br>
+<label>Mode of trainig</label><span>*</span><br>
+<input type="text" id="mot" name="mot" required/><br>
+<p align="center">
+<button>Submit</button>
+</p>
+    </form>
+</div>
+</body>
+</html>
